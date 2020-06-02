@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FNT-3B-hiE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dHj-D7-5Lx">
+            <objects>
+                <navigationController id="FNT-3B-hiE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NLz-EG-nEt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="mainGray"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f4I-LJ-D6S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVa-e3-hvu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-861" y="139"/>
+        </scene>
+        <!--PayTabs Configuration-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="PTConfigurationsViewController" customModule="PayTabsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCp-YF-dAg">
+                                <rect key="frame" x="31" y="817" width="352" height="45"/>
+                                <color key="backgroundColor" name="mainBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="wGv-TT-E7R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.98823541400000003" green="0.98823529480000005" blue="0.98823529480000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressContinue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TER-ft-aWz"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-ha-QSB">
+                                <rect key="frame" x="0.0" y="100" width="414" height="705"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-jQ-UZD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="YZE-nR-6dT"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V8H-oQ-LOK">
+                                        <rect key="frame" x="25" y="0.0" width="364" height="1605"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewy-4S-Ifa" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="DqK-bn-J6e"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="rZn-Cc-S6L"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Customer Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Customer Title"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OU-D1-8oG" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="lHO-hZ-Dqm"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="MFs-UV-Mv8"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Currency Code"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Currency Code"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" id="JPf-QT-428" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="170" width="364" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="KAl-Mx-oXU"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="aqA-Ge-Cbb"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Tax Amount"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Tax Amount"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-Q8-jVs" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="255" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="7gy-jw-7Yd"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Nsl-UR-kRe"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Tax Amount"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Tax Amount"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-lJ-uKF" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="hq3-Ma-Y0O"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Dh1-3D-a2D"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="SDK Language"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter SDK Language"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDG-yY-bo7" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="425" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="8u0-Ue-JKv"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="xJU-Kp-vCg"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping Address"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Shipping Address"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41g-Nf-G9d" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="510" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="c1P-ll-5n4"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="s9g-Jl-16o"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping City"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Shipping City"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1S-oQ-PJh" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="595" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="vHu-4L-ALr"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="ZCE-vh-202"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping Country"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" EnterShipping Country"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yor-1U-I9L" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="680" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="WTc-Y0-QOy"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="ema-2m-IE0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping State"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Shipping State"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brs-ht-8qy" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="765" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="TDn-BK-CWb"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="zDo-Db-WG0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping ZIP Code"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Shipping ZIP Code"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-Xk-C6G" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="850" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="hCM-fu-4Ch"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="leu-QH-7Bx"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Billing Address"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Billing Address"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg0-bu-5IB" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="935" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="stI-fw-Fpn"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="AlQ-p9-0df"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Billing City"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Billing City"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vq-37-3WG" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1020" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="rFo-8J-oZd"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="R2n-9w-6b1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Billing Country"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Billing Country"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" id="lWV-jU-ikc" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1105" width="364" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="sph-yg-Kp6"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Gn2-A3-4Rs"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Billing State"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Billing State"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqX-vH-pxV" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1190" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="1Ea-qV-4Pj"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Billing ZIP Code"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Billing ZIP Code"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-Ts-G2u" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1275" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="vJW-Qb-CrR"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="TIC-iM-pxX"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Order ID"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Order ID"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVI-9K-QEd" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1360" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="M9A-CZ-2gS"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="ssB-ql-8si"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Phone Number"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Phone Number"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-FU-Hbu" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1445" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="T20-tw-CVt"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="YJj-nx-Gda"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Customer Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Customer Email"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9c9-qC-GzH" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1530" width="364" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="g6T-oD-UBr"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="xo7-BU-JBj"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Merchant Email"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Merchant Email"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1605" id="ss1-cd-mK9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="V8H-oQ-LOK" firstAttribute="top" secondItem="n1k-7D-ZeM" secondAttribute="top" id="08t-eW-kXB"/>
+                                    <constraint firstItem="V8H-oQ-LOK" firstAttribute="leading" secondItem="vTf-bA-WYB" secondAttribute="leading" constant="25" id="3TW-uF-zMJ"/>
+                                    <constraint firstItem="0ZA-jQ-UZD" firstAttribute="top" secondItem="n1k-7D-ZeM" secondAttribute="top" id="KQ2-iP-U5I"/>
+                                    <constraint firstItem="0ZA-jQ-UZD" firstAttribute="trailing" secondItem="n1k-7D-ZeM" secondAttribute="trailing" id="PRs-I9-2Y3"/>
+                                    <constraint firstItem="V8H-oQ-LOK" firstAttribute="bottom" secondItem="n1k-7D-ZeM" secondAttribute="bottom" id="QoZ-uP-AbP"/>
+                                    <constraint firstItem="vTf-bA-WYB" firstAttribute="trailing" secondItem="V8H-oQ-LOK" secondAttribute="trailing" constant="25" id="vrq-ql-49R"/>
+                                    <constraint firstItem="0ZA-jQ-UZD" firstAttribute="leading" secondItem="n1k-7D-ZeM" secondAttribute="leading" id="x9M-6K-bg5"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="n1k-7D-ZeM"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vTf-bA-WYB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dCp-YF-dAg" firstAttribute="top" secondItem="bqa-ha-QSB" secondAttribute="bottom" constant="12" id="0WT-9G-atd"/>
+                            <constraint firstItem="bqa-ha-QSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IE3-I6-EqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bqa-ha-QSB" secondAttribute="trailing" id="ZkA-e5-p83"/>
+                            <constraint firstItem="dCp-YF-dAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byV-wU-8FU"/>
+                            <constraint firstItem="dCp-YF-dAg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="ibZ-sq-HsJ"/>
+                            <constraint firstItem="dCp-YF-dAg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jbD-2b-LLd"/>
+                            <constraint firstItem="0ZA-jQ-UZD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pNM-Gc-24M"/>
+                            <constraint firstItem="bqa-ha-QSB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="q69-TN-1NA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayTabs Configuration" id="5Tw-sq-qfh"/>
+                    <connections>
+                        <outlet property="amountIV" destination="JPf-QT-428" id="9VZ-Li-I8j"/>
+                        <outlet property="billingAddressIV" destination="EBe-Xk-C6G" id="s30-DW-57m"/>
+                        <outlet property="billingCityIV" destination="mg0-bu-5IB" id="Lnc-8U-ZSa"/>
+                        <outlet property="billingCountryIV" destination="4Vq-37-3WG" id="wTO-hk-jqq"/>
+                        <outlet property="billingStateIV" destination="lWV-jU-ikc" id="N7v-Cp-Hhm"/>
+                        <outlet property="billingZIPCodeIV" destination="GqX-vH-pxV" id="vKL-PF-AEp"/>
+                        <outlet property="currencyCodeIV" destination="6OU-D1-8oG" id="4tO-Zk-J6U"/>
+                        <outlet property="customerEmailIV" destination="Frm-FU-Hbu" id="Ts6-bq-xiY"/>
+                        <outlet property="customerNameIV" destination="ewy-4S-Ifa" id="m2C-5J-eRh"/>
+                        <outlet property="merchantEmailIV" destination="9c9-qC-GzH" id="hwJ-ce-oJw"/>
+                        <outlet property="orderIDIV" destination="a3j-Ts-G2u" id="Cfv-Ps-VDw"/>
+                        <outlet property="phoneNumberIV" destination="PVI-9K-QEd" id="FrK-4E-7p0"/>
+                        <outlet property="sdkLanguageIV" destination="Rws-lJ-uKF" id="8VK-AS-UQ9"/>
+                        <outlet property="shippingAddressIV" destination="pDG-yY-bo7" id="aFb-DY-72I"/>
+                        <outlet property="shippingCityIV" destination="41g-Nf-G9d" id="KBj-M6-T98"/>
+                        <outlet property="shippingCountryIV" destination="Y1S-oQ-PJh" id="iEx-yT-CkN"/>
+                        <outlet property="shippingStateIV" destination="yor-1U-I9L" id="Ynr-IM-v8m"/>
+                        <outlet property="shippingZIPCodeIV" destination="brs-ht-8qy" id="0p8-nE-pXL"/>
+                        <outlet property="taxAmountIV" destination="sXv-Q8-jVs" id="TuP-nr-EsD"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="19" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mainBlue">
+            <color red="0.19344666599999999" green="0.4483016729" blue="0.71375960110000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="mainGray">
+            <color red="0.34514033789999998" green="0.34887382389999999" blue="0.35686403509999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
