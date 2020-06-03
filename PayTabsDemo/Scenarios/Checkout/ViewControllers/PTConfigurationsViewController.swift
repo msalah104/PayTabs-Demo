@@ -102,7 +102,31 @@ class PTConfigurationsViewController: UIViewController {
 
 extension PTConfigurationsViewController: ValidationDelegate {
     func validationSuccessful() {
+        let checkoutNV = storyboard?.instantiateViewController(withIdentifier: "ChechoutViewController") as? UINavigationController
+        let checkoutVC = checkoutNV?.viewControllers.first as? ChechoutViewController
         
+        //Pass the configuration data
+        checkoutVC?.customerName = customerNameIV.text
+        checkoutVC?.amount = (amountIV.text as NSString).floatValue
+        checkoutVC?.taxAmount = (taxAmountIV.text as NSString).floatValue
+        checkoutVC?.currencyCode = currencyCodeIV.text
+        checkoutVC?.sdkLanguage = sdkLanguageIV.text
+        checkoutVC?.shippingAddress = shippingAddressIV.text
+        checkoutVC?.shippingCity = shippingCityIV.text
+        checkoutVC?.shippingCountry = shippingCountryIV.text
+        checkoutVC?.shippingState = shippingStateIV.text
+        checkoutVC?.shippingZIPCode = shippingZIPCodeIV.text
+        checkoutVC?.billingAddress = billingAddressIV.text
+        checkoutVC?.billingCity = billingCityIV.text
+        checkoutVC?.billingCountry = billingCountryIV.text
+        checkoutVC?.billingState = billingStateIV.text
+        checkoutVC?.billingZIPCode = billingZIPCodeIV.text
+        checkoutVC?.orderID = orderIDIV.text
+        checkoutVC?.phoneNumber = phoneNumberIV.text
+        checkoutVC?.customerEmail = customerEmailIV.text
+        checkoutVC?.merchantEmail = merchantEmailIV.text
+        
+        self.navigationController?.present(checkoutNV ?? UIViewController(), animated: true, completion: nil)
     }
     
     func validationFailed(_ errors: [(Validatable, ValidationError)]) {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6A9A8C022486F1EC0014E423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C012486F1EC0014E423 /* AppDelegate.swift */; };
-		6A9A8C042486F1EC0014E423 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C032486F1EC0014E423 /* SceneDelegate.swift */; };
 		6A9A8C092486F1EC0014E423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C072486F1EC0014E423 /* Main.storyboard */; };
 		6A9A8C0B2486F1F00014E423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C0A2486F1F00014E423 /* Assets.xcassets */; };
 		6A9A8C0E2486F1F00014E423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C0C2486F1F00014E423 /* LaunchScreen.storyboard */; };
@@ -42,13 +41,16 @@
 		6A9A8C532486F68D0014E423 /* AlphaRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C352486F68D0014E423 /* AlphaRule.swift */; };
 		6A9A8C542486F68D0014E423 /* ISBNRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C362486F68D0014E423 /* ISBNRule.swift */; };
 		6A9A8C5B2486F7990014E423 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C5A2486F7990014E423 /* Colors.xcassets */; };
-		6A9A8C602486F93D0014E423 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C5F2486F93D0014E423 /* Resources.bundle */; };
-		6A9A8C632486F9510014E423 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9A8C622486F9510014E423 /* paytabs-iOS.framework */; };
 		6A9A8C682486F9CF0014E423 /* InputFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C662486F9CF0014E423 /* InputFieldView.xib */; };
 		6A9A8C692486F9CF0014E423 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C672486F9CF0014E423 /* InputFieldView.swift */; };
 		6A9A8C6C2486FCF20014E423 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C6B2486FCF20014E423 /* UIView+Extension.swift */; };
 		6A9A8C6F248703720014E423 /* PTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C6E248703720014E423 /* PTTextField.swift */; };
 		6A9A8C71248707FA0014E423 /* PTConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C70248707FA0014E423 /* PTConfigurationsViewController.swift */; };
+		6A9A8C73248714310014E423 /* ChechoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C72248714310014E423 /* ChechoutViewController.swift */; };
+		6A9A8C78248725060014E423 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A8C77248725060014E423 /* Resources.bundle */; };
+		6A9A8C7A248731250014E423 /* paytabs-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9A8C79248731250014E423 /* paytabs-iOS.framework */; };
+		6A9A8C7D2487318F0014E423 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C7C2487318F0014E423 /* UIColor+Extension.swift */; };
+		6A9A8C80248734B30014E423 /* CheckoutResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A8C7F248734B30014E423 /* CheckoutResultViewController.swift */; };
 		FE1857782D38DE5F0EB6EE27 /* Pods_PayTabsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C9F33349C2738300523CC /* Pods_PayTabsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +58,6 @@
 		529C9F33349C2738300523CC /* Pods_PayTabsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayTabsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A8BFE2486F1EC0014E423 /* PayTabsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayTabsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9A8C012486F1EC0014E423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A9A8C032486F1EC0014E423 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A9A8C082486F1EC0014E423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A9A8C0A2486F1F00014E423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A9A8C0D2486F1F00014E423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,14 +93,17 @@
 		6A9A8C362486F68D0014E423 /* ISBNRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBNRule.swift; sourceTree = "<group>"; };
 		6A9A8C372486F68D0014E423 /* SwiftValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftValidator.h; sourceTree = "<group>"; };
 		6A9A8C5A2486F7990014E423 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		6A9A8C5D2486F8450014E423 /* PayTabsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PayTabsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		6A9A8C5F2486F93D0014E423 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
-		6A9A8C622486F9510014E423 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
 		6A9A8C662486F9CF0014E423 /* InputFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputFieldView.xib; sourceTree = "<group>"; };
 		6A9A8C672486F9CF0014E423 /* InputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
 		6A9A8C6B2486FCF20014E423 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		6A9A8C6E248703720014E423 /* PTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTTextField.swift; sourceTree = "<group>"; };
 		6A9A8C70248707FA0014E423 /* PTConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTConfigurationsViewController.swift; sourceTree = "<group>"; };
+		6A9A8C72248714310014E423 /* ChechoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChechoutViewController.swift; sourceTree = "<group>"; };
+		6A9A8C7424871A670014E423 /* PayTabsDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayTabsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A9A8C77248725060014E423 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		6A9A8C79248731250014E423 /* paytabs-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "paytabs-iOS.framework"; sourceTree = "<group>"; };
+		6A9A8C7C2487318F0014E423 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6A9A8C7F248734B30014E423 /* CheckoutResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutResultViewController.swift; sourceTree = "<group>"; };
 		7266193E02CB473503B6EC4D /* Pods-PayTabsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabsDemo.debug.xcconfig"; path = "Target Support Files/Pods-PayTabsDemo/Pods-PayTabsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C3DF8E7530F5CEC141D99F8A /* Pods-PayTabsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayTabsDemo.release.xcconfig"; path = "Target Support Files/Pods-PayTabsDemo/Pods-PayTabsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE1857782D38DE5F0EB6EE27 /* Pods_PayTabsDemo.framework in Frameworks */,
-				6A9A8C632486F9510014E423 /* paytabs-iOS.framework in Frameworks */,
+				6A9A8C7A248731250014E423 /* paytabs-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				6A9A8C552486F69B0014E423 /* Scenarios */,
-				6A9A8C152486F65C0014E423 /* Supporting Files */,
+				6A9A8C152486F65C0014E423 /* SupportingFiles */,
 				6A9A8C0A2486F1F00014E423 /* Assets.xcassets */,
 				6A9A8C0C2486F1F00014E423 /* LaunchScreen.storyboard */,
 				6A9A8C0F2486F1F00014E423 /* Info.plist */,
@@ -157,18 +161,17 @@
 			path = PayTabsDemo;
 			sourceTree = "<group>";
 		};
-		6A9A8C152486F65C0014E423 /* Supporting Files */ = {
+		6A9A8C152486F65C0014E423 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				6A9A8C6A2486FCB50014E423 /* Extensions */,
 				6A9A8C012486F1EC0014E423 /* AppDelegate.swift */,
-				6A9A8C032486F1EC0014E423 /* SceneDelegate.swift */,
 				6A9A8C612486F9400014E423 /* Frameworks */,
 				6A9A8C5E2486F9230014E423 /* Resources */,
 				6A9A8C5C2486F81D0014E423 /* BridgeHeader */,
 				6A9A8C162486F66E0014E423 /* Libs */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		6A9A8C162486F66E0014E423 /* Libs */ = {
@@ -255,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				6A9A8C70248707FA0014E423 /* PTConfigurationsViewController.swift */,
+				6A9A8C72248714310014E423 /* ChechoutViewController.swift */,
+				6A9A8C7F248734B30014E423 /* CheckoutResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -277,7 +282,7 @@
 		6A9A8C5C2486F81D0014E423 /* BridgeHeader */ = {
 			isa = PBXGroup;
 			children = (
-				6A9A8C5D2486F8450014E423 /* PayTabsDemo-Bridging-Header.h */,
+				6A9A8C7424871A670014E423 /* PayTabsDemo-Bridging-Header.h */,
 			);
 			path = BridgeHeader;
 			sourceTree = "<group>";
@@ -285,7 +290,7 @@
 		6A9A8C5E2486F9230014E423 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6A9A8C5F2486F93D0014E423 /* Resources.bundle */,
+				6A9A8C77248725060014E423 /* Resources.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -293,7 +298,7 @@
 		6A9A8C612486F9400014E423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A9A8C622486F9510014E423 /* paytabs-iOS.framework */,
+				6A9A8C79248731250014E423 /* paytabs-iOS.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				6A9A8C6B2486FCF20014E423 /* UIView+Extension.swift */,
+				6A9A8C7C2487318F0014E423 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -401,8 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9A8C5B2486F7990014E423 /* Colors.xcassets in Resources */,
-				6A9A8C602486F93D0014E423 /* Resources.bundle in Resources */,
 				6A9A8C0E2486F1F00014E423 /* LaunchScreen.storyboard in Resources */,
+				6A9A8C78248725060014E423 /* Resources.bundle in Resources */,
 				6A9A8C0B2486F1F00014E423 /* Assets.xcassets in Resources */,
 				6A9A8C382486F68D0014E423 /* Info1.plist in Resources */,
 				6A9A8C092486F1EC0014E423 /* Main.storyboard in Resources */,
@@ -472,8 +478,8 @@
 				6A9A8C422486F68D0014E423 /* ConfirmRule.swift in Sources */,
 				6A9A8C3E2486F68D0014E423 /* FullNameRule.swift in Sources */,
 				6A9A8C442486F68D0014E423 /* FloatRule.swift in Sources */,
-				6A9A8C042486F1EC0014E423 /* SceneDelegate.swift in Sources */,
 				6A9A8C512486F68D0014E423 /* IPV4Rule.swift in Sources */,
+				6A9A8C7D2487318F0014E423 /* UIColor+Extension.swift in Sources */,
 				6A9A8C4C2486F68D0014E423 /* AlphaNumericRule.swift in Sources */,
 				6A9A8C482486F68D0014E423 /* PhoneNumberOperatorRule.swift in Sources */,
 				6A9A8C3F2486F68D0014E423 /* CharacterSetRule.swift in Sources */,
@@ -481,12 +487,14 @@
 				6A9A8C4A2486F68D0014E423 /* Name.swift in Sources */,
 				6A9A8C402486F68D0014E423 /* PasswordRule.swift in Sources */,
 				6A9A8C71248707FA0014E423 /* PTConfigurationsViewController.swift in Sources */,
+				6A9A8C73248714310014E423 /* ChechoutViewController.swift in Sources */,
 				6A9A8C492486F68D0014E423 /* HexColorRule.swift in Sources */,
 				6A9A8C3B2486F68D0014E423 /* ValidationDelegate.swift in Sources */,
 				6A9A8C4B2486F68D0014E423 /* EmailRule.swift in Sources */,
 				6A9A8C3C2486F68D0014E423 /* Validatable.swift in Sources */,
 				6A9A8C452486F68D0014E423 /* MaxLengthRule.swift in Sources */,
 				6A9A8C462486F68D0014E423 /* RegexRule.swift in Sources */,
+				6A9A8C80248734B30014E423 /* CheckoutResultViewController.swift in Sources */,
 				6A9A8C532486F68D0014E423 /* AlphaRule.swift in Sources */,
 				6A9A8C472486F68D0014E423 /* ZipCodeRule.swift in Sources */,
 				6A9A8C4F2486F68D0014E423 /* CreditCardDateRule.swift in Sources */,
@@ -641,7 +649,20 @@
 				DEVELOPMENT_TEAM = J83X3QNJRW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/PayTabsDemo/Supporting\\ Files/Frameworks",
+					"$(PROJECT_DIR)/PayTabsDemo/SupportingFiles/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BIObjCHelpers/BIObjCHelpers.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Lockbox/Lockbox.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Mantle/Mantle.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PINCache/PINCache.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SBJson/SBJson.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0\"",
 				);
 				INFOPLIST_FILE = PayTabsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -649,10 +670,49 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BIObjCHelpers\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"Lockbox\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SBJson\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msalah.PayTabsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PayTabsDemo/SupportingFiles/BridgeHeader/PayTabsDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -665,7 +725,20 @@
 				DEVELOPMENT_TEAM = J83X3QNJRW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/PayTabsDemo/Supporting\\ Files/Frameworks",
+					"$(PROJECT_DIR)/PayTabsDemo/SupportingFiles/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BIObjCHelpers/BIObjCHelpers.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManager/IQKeyboardManager.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Lockbox/Lockbox.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Mantle/Mantle.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PINCache/PINCache.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SBJson/SBJson.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0\"",
 				);
 				INFOPLIST_FILE = PayTabsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -673,10 +746,48 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BIObjCHelpers\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"Lockbox\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"Mantle\"",
+					"-framework",
+					"\"PINCache\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"SBJson\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.msalah.PayTabsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PayTabsDemo/SupportingFiles/BridgeHeader/PayTabsDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
