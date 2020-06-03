@@ -20,7 +20,7 @@ public class PasswordRule: RegexRule {
     // static let regex = "^(?=.*?[A-Z])(?=.*?[0-9])(?=.*?[a-z]).*?$"
 
     /// Regular express string to be used in validation.
-    static let regex = "^(?=.*?).{6,}$"//"^(?=.*?[A-Z]).{8,}$"
+    static let regex = "^(?=.*?).{6,}$" // "^(?=.*?[A-Z]).{8,}$"
 
     /**
      Initializes a `PasswordRule` object that will validate a field is a valid password.

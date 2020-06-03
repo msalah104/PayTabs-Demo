@@ -26,6 +26,13 @@ PODS:
   - PINCache (2.3)
   - Reachability (3.2)
   - SBJson (5.0.3)
+  - SwiftFormat/CLI (0.44.7)
+  - SwiftLint (0.39.2)
+  - Swinject (2.6.2)
+  - SwinjectAutoregistration (2.6.1):
+    - Swinject (~> 2.6)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
@@ -39,6 +46,11 @@ DEPENDENCIES:
   - PINCache
   - Reachability
   - SBJson
+  - SwiftFormat/CLI
+  - SwiftLint
+  - Swinject (~> 2.6.0)
+  - SwinjectAutoregistration (~> 2.6.0)
+  - SwinjectStoryboard
 
 SPEC REPOS:
   trunk:
@@ -53,6 +65,11 @@ SPEC REPOS:
     - PINCache
     - Reachability
     - SBJson
+    - SwiftFormat
+    - SwiftLint
+    - Swinject
+    - SwinjectAutoregistration
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: 6d79f6f3b98e2b21d218dd65a39f634ff37a27e5
@@ -66,7 +83,12 @@ SPEC CHECKSUMS:
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SBJson: 31813d1508edec904663cd59e71e0225d9dd8e07
+  SwiftFormat: fd97e27b8de5a46c9d1988bf1db1dc92e79f86a3
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectAutoregistration: d0de7e48db3601b8b130f2f84e5a8399e0224135
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 1c99027122cbe51bcbe8cc0366fb0780a80b011b
+PODFILE CHECKSUM: eec29e198275fb7905bd94ec03cf6965ff52d6e8
 
 COCOAPODS: 1.8.4

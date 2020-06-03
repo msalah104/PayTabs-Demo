@@ -32,7 +32,7 @@ open class RequiredRule: Rule {
      - returns: Boolean value. True if validation is successful; False if validation fails.
      */
     open func validate(_ value: String) -> Bool {
-        return !value.isEmpty//removingWhitespaces().isEmpty
+        return !value.isEmpty // removingWhitespaces().isEmpty
     }
 
     /**

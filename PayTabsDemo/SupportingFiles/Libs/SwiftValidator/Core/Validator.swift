@@ -117,13 +117,12 @@ public class Validator {
         callBacks[field] = callBack
         registerField(field, errorLabel: errorLabel, rules: rules)
     }
-    
+
     func registerInputView(_ inputView: InputFieldView, rules: [Rule]) {
         let txtField = inputView.contentTextField
 
-        
-        self.registerField(txtField!, errorLabel: inputView.errorLabel, rules: rules) { (error) in
-          
+        registerField(txtField!, errorLabel: inputView.errorLabel, rules: rules) { error in
+
             if error.isEmpty {
                 inputView.contentTextField.borderWidth = 0
                 inputView.errorLabel.text = error

@@ -35,6 +35,6 @@ class CreditCardDateRule: Rule {
     }
 
     func errorMessage() -> String {
-        return ""//FlyErrorMessages.DateInvalid
+        return "" // FlyErrorMessages.DateInvalid
     }
 }

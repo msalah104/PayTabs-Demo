@@ -18,4 +18,9 @@ target 'PayTabsDemo' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'ActionSheetPicker-3.0'
   pod 'PayCardsRecognizer'
+  pod 'SwiftLint'
+  pod 'SwiftFormat/CLI'
+  pod 'Swinject', '~> 2.6.0'
+  pod 'SwinjectAutoregistration', '~> 2.6.0'
+  pod 'SwinjectStoryboard'
 end

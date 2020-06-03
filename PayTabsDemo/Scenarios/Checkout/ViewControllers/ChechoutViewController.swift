@@ -6,110 +6,86 @@
 //  Copyright © 2020 MSalah. All rights reserved.
 //
 
-import UIKit
 import MBProgressHUD
+import UIKit
 
 class ChechoutViewController: UIViewController {
-    
     var ptViewController: PTFWInitialSetupViewController!
-    var customerName = ""
-    var currencyCode = ""
-    var taxAmount:Float = 0.0
-    var amount:Float = 5.0
-    var sdkLanguage = ""
-    var shippingAddress = ""
-    var shippingCity = ""
-    var shippingCountry = ""
-    var shippingState = ""
-    var shippingZIPCode = ""
-    var billingAddress = ""
-    var billingCity = ""
-    var billingCountry = ""
-    var billingState = ""
-    var billingZIPCode = ""
-    var orderID = ""
-    var phoneNumber = ""
-    var customerEmail = ""
-    var merchantEmail = ""
+    var viewModel: ChceckoutViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        MBProgressHUD.showAdded(to: self.view, animated: true)
+        MBProgressHUD.showAdded(to: view, animated: true)
         setupPayTabsSDK()
     }
-    
-    
+
     func setupPayTabsSDK() {
-        
         let bundle = Bundle(url: Bundle.main.url(forResource: "Resources", withExtension: "bundle")!)
-        
-        self.ptViewController = PTFWInitialSetupViewController.init(
+        ptViewController = PTFWInitialSetupViewController(
             bundle: bundle,
-            andWithViewFrame: self.view.frame,
-            andWithAmount: amount,
-            andWithCustomerTitle: customerName,
-            andWithCurrencyCode: currencyCode,
-            andWithTaxAmount: taxAmount,
-            andWithSDKLanguage: sdkLanguage,
-            andWithShippingAddress: shippingAddress,
-            andWithShippingCity: shippingCity,
-            andWithShippingCountry: shippingCountry,
-            andWithShippingState: shippingState,
-            andWithShippingZIPCode: shippingZIPCode,
-            andWithBillingAddress: billingAddress,
-            andWithBillingCity: billingCity,
-            andWithBillingCountry: billingCountry,
-            andWithBillingState: billingState,
-            andWithBillingZIPCode: billingZIPCode,
-            andWithOrderID: orderID,
-            andWithPhoneNumber: phoneNumber,
-            andWithCustomerEmail: customerEmail,
-            andIsTokenization:false,
-            andIsPreAuth: false,
-            andWithMerchantEmail: merchantEmail,
-            andWithMerchantSecretKey: "BIueZNfPLblJnMmPYARDEoP5x1WqseI3XciX0yNLJ8v7URXTrOw6dmbKn8bQnTUk6ch6L5SudnC8fz2HozNBVZlj7w9uq4Pwg7D1",
-            andWithAssigneeCode: "SDK",
-            andWithThemeColor:UIColor.mainBlue,
-            andIsThemeColorLight: false)
-        
-        self.ptViewController.didReceiveBackButtonCallback = { [unowned self] in
+            andWithViewFrame: view.frame,
+            andWithAmount: viewModel.amount,
+            andWithCustomerTitle: viewModel.customerName,
+            andWithCurrencyCode: viewModel.currencyCode,
+            andWithTaxAmount: viewModel.taxAmount,
+            andWithSDKLanguage: viewModel.sdkLanguage,
+            andWithShippingAddress: viewModel.shippingAddress,
+            andWithShippingCity: viewModel.shippingCity,
+            andWithShippingCountry: viewModel.shippingCountry,
+            andWithShippingState: viewModel.shippingState,
+            andWithShippingZIPCode: viewModel.shippingZIPCode,
+            andWithBillingAddress: viewModel.billingAddress,
+            andWithBillingCity: viewModel.billingCity,
+            andWithBillingCountry: viewModel.billingCountry,
+            andWithBillingState: viewModel.billingState,
+            andWithBillingZIPCode: viewModel.billingZIPCode,
+            andWithOrderID: viewModel.orderID,
+            andWithPhoneNumber: viewModel.phoneNumber,
+            andWithCustomerEmail: viewModel.customerEmail,
+            andIsTokenization: false,
+            andIsPreAuth: true,
+            andWithMerchantEmail: viewModel.merchantEmail,
+            andWithMerchantSecretKey: viewModel.merchantSecretKey,
+            andWithAssigneeCode: viewModel.assigneeCode,
+            andWithThemeColor: UIColor.mainBlue,
+            andIsThemeColorLight: false
+        )
+
+        ptViewController.didReceiveBackButtonCallback = { [unowned self] in
             self.dismiss(animated: true, completion: nil)
         }
-        
-        self.ptViewController.didStartPreparePaymentPage = { [unowned self] in
+
+        ptViewController.didStartPreparePaymentPage = {
             // Start Prepare Payment Page
             // Show loading indicator
-            
         }
-        self.ptViewController.didFinishPreparePaymentPage = {
+        ptViewController.didFinishPreparePaymentPage = {
             // Finish Prepare Payment Page
             // Stop loading indicator
             MBProgressHUD.hide(for: self.view, animated: true)
         }
-        
-        self.ptViewController.didReceiveFinishTransactionCallback = { [unowned self](responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
+
+        ptViewController.didReceiveFinishTransactionCallback = { [unowned self] responseCode, result, _, tokenizedCustomerEmail, tokenizedCustomerPassword, token, _ in
             print("Response Code: \(responseCode)")
             print("Response Result: \(result)")
-            
+
             // In Case you are using tokenization
-            print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)");
-            print("Tokenization Customer Password: \(tokenizedCustomerPassword)");
-            print("TOkenization Token: \(token)");
-            
+            print("Tokenization Cutomer Email: \(tokenizedCustomerEmail)")
+            print("Tokenization Customer Password: \(tokenizedCustomerPassword)")
+            print("TOkenization Token: \(token)")
+
             let resultVC = self.storyboard?.instantiateViewController(withIdentifier: "CheckoutResultViewController") as? CheckoutResultViewController
             resultVC?.code = "\(responseCode)"
             resultVC?.result = result
             resultVC?.email = tokenizedCustomerEmail
             resultVC?.pass = tokenizedCustomerPassword
             resultVC?.token = token
-            
+
             self.navigationController?.show(resultVC ?? UIViewController(), sender: nil)
         }
-        
-        self.view.addSubview(ptViewController.view)
-        self.addChild(ptViewController)
-        
+
+        view.addSubview(ptViewController.view)
+        addChild(ptViewController)
         ptViewController.didMove(toParent: self)
-        
     }
 }

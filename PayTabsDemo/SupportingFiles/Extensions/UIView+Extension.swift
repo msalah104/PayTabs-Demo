@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIView {
-    
     @IBInspectable
     var cornerRadius: CGFloat {
         get {
@@ -20,7 +19,7 @@ extension UIView {
             layer.masksToBounds = newValue > 0
         }
     }
-    
+
     @IBInspectable
     var borderWidth: CGFloat {
         get {
@@ -30,7 +29,7 @@ extension UIView {
             layer.borderWidth = newValue
         }
     }
-    
+
     @IBInspectable
     var borderColor: UIColor? {
         get {

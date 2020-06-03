@@ -38,7 +38,7 @@ open class RegexRule: Rule {
     open func validate(_ value: String) -> Bool {
         var text = value
         if self is EmailRule {
-            text = value//.removingWhitespaces()
+            text = value // .removingWhitespaces()
         }
         let test = NSPredicate(format: "SELF MATCHES %@", REGEX)
         return test.evaluate(with: text)
