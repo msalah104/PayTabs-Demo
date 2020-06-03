@@ -126,7 +126,7 @@ extension PTConfigurationsViewController: ValidationDelegate {
         checkoutVC?.customerEmail = customerEmailIV.text
         checkoutVC?.merchantEmail = merchantEmailIV.text
         
-        self.navigationController?.present(checkoutNV ?? UIViewController(), animated: true, completion: nil)
+        self.navigationController?.present(checkoutNV ?? UIViewController(), animated: false, completion: nil)
     }
     
     func validationFailed(_ errors: [(Validatable, ValidationError)]) {

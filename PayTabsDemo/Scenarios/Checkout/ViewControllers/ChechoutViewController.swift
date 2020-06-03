@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class ChechoutViewController: UIViewController {
     
@@ -33,6 +34,7 @@ class ChechoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         setupPayTabsSDK()
     }
     
@@ -71,16 +73,18 @@ class ChechoutViewController: UIViewController {
             andIsThemeColorLight: false)
         
         self.ptViewController.didReceiveBackButtonCallback = { [unowned self] in
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
         }
         
-        self.ptViewController.didStartPreparePaymentPage = {
+        self.ptViewController.didStartPreparePaymentPage = { [unowned self] in
             // Start Prepare Payment Page
             // Show loading indicator
+            
         }
         self.ptViewController.didFinishPreparePaymentPage = {
             // Finish Prepare Payment Page
             // Stop loading indicator
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
         
         self.ptViewController.didReceiveFinishTransactionCallback = { [unowned self](responseCode, result, transactionID, tokenizedCustomerEmail, tokenizedCustomerPassword, token, transactionState) in
