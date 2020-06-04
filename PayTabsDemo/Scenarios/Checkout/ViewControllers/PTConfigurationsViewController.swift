@@ -77,7 +77,7 @@ class PTConfigurationsViewController: UIViewController {
         validator.registerInputView(assigneeCodeIV, rules: [DefaultRequiredRule])
 
         // For testing
-        addDummyDataForTesting()
+//        addDummyDataForTesting()
     }
 
     func addDummyDataForTesting() {

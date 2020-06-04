@@ -89,7 +89,7 @@
                                                 <viewLayoutGuide key="safeArea" id="rZn-Cc-S6L"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Customer Title"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Customer Title"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="Enter Customer Title"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OU-D1-8oG" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
@@ -114,7 +114,7 @@
                                                 <viewLayoutGuide key="safeArea" id="aqA-Ge-Cbb"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Tax Amount"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Tax Amount"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Amount"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-Q8-jVs" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">
@@ -174,7 +174,7 @@
                                                 <viewLayoutGuide key="safeArea" id="ZCE-vh-202"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shipping Country"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" EnterShipping Country"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value=" Enter Shipping Country"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yor-1U-I9L" customClass="InputFieldView" customModule="PayTabsDemo" customModuleProvider="target">

@@ -259,7 +259,6 @@
 				6AB2C08224880B0A0098AAF7 /* ViewModel */,
 				6A9A8C642486F9BD0014E423 /* CustomViews */,
 				6A9A8C592486F6CF0014E423 /* Storyboard */,
-				6A9A8C582486F6C90014E423 /* Model */,
 				6A9A8C572486F6C30014E423 /* ViewControllers */,
 			);
 			path = Checkout;
@@ -273,13 +272,6 @@
 				6A9A8C7F248734B30014E423 /* CheckoutResultViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		6A9A8C582486F6C90014E423 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		6A9A8C592486F6CF0014E423 /* Storyboard */ = {
@@ -722,7 +714,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J83X3QNJRW;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayTabsDemo/SupportingFiles/Frameworks",
@@ -798,7 +791,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J83X3QNJRW;
+				DEVELOPMENT_TEAM = Y7K45XUMA7;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PayTabsDemo/SupportingFiles/Frameworks",
